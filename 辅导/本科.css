@@ -1,0 +1,488 @@
+
+/* COGS3 studyBuddy specific styles go here. */
+
+#title
+{background-color:white;}
+
+.container-fluid{
+  padding:1% 1%;
+  margin:0 auto;
+  max-width:1200px;
+  }
+
+h1 {
+  font-family: 'Agbalumo';
+  font-weight: bold;
+  font-size: 5rem;
+  line-height: 1.5;
+  color:#fff;
+}
+
+h4 {
+  font-family: 'Agbalumo';
+  font-size: 3rem;
+  line-height: 1;
+  color:white;
+  text-align: center;
+}
+
+h2{
+  color:#fff;
+  font-family: 'Montserrat';
+  font-size:1.5;
+  font-weight: bold;
+}
+h3{
+  font-family: 'Montserrat';
+  font-weight: bold;
+  }
+
+p{
+  color:#8f8f8f;
+  font-size:1.5rem;
+
+}
+
+/* navbar */
+.navbar{
+  padding:0 ;
+  margin-bottom: 0;
+}
+.navbar-brand {
+  font-family: 'Agbalumo';
+  font-size:4.0rem;
+
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.navbar-item{
+  padding:0 18px; 
+}
+.nav-link{
+  font-family: 'Montserrat',sans-serif;
+  font-size: 2.0rem;
+  font-weight: bold;
+}
+
+/* first-container section */
+/* titl image */
+#first-container{
+  background-color: #00649b;
+  background-image:url(photo/12.jpeg);
+  margin-top: 0%;
+  width: 100%;
+  height: 10%;
+  background-position: center center;
+  padding: 5px 0px 8px 0px;
+}
+
+#first-container .col-lg-6 h1{
+  padding-left: 150px; /* Adjust this value as needed */
+  margin-top: 28px;
+}
+#first-container .col-lg-6 h5 {
+  font-family: 'Agbalumo';
+  font-weight: bold;
+  font-size: 5rem;
+  line-height: 1.5;
+  color:#fff;
+  padding-left: 250px;
+}
+
+.download-button{
+  margin: 8% 35% 10% 20%;
+  padding: 0.5em 1.25em;
+  border-radius: 55px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  }
+  
+
+.title-image{
+  width: 100%;
+  height: 50%;
+  position: relative;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+@media (max-width: 991px) {
+  /* Adjust the layout for smaller screens */
+  #your-section {
+    flex-direction: column;
+  }
+
+  .text-content,
+  .image-content {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
+
+/* progress */
+#progress{
+  margin-top: 0%;
+  width: 100%;
+  height: auto;
+  background-position: center center;
+  padding: 5px 0px ;
+}
+
+#progress .col-lg-12 h1{
+  font-family: 'Agbalumo';
+  color:black;
+  font-size: 3.0rem;
+  text-align:center;
+  padding-top:3%;
+  margin:0;
+}
+
+#progress  .col-lg-12 img{
+  height: auto;
+  width: 100%; /* Ensure it is responsive */
+  display: block; /* Ensures it doesn't have extra space around */
+  margin: auto;
+  margin-left:3%;
+}
+
+@media (max-width: 768px) {
+  #progress .col-lg-12 h1 {
+    font-size: 1.75rem; /* Smaller font size for small screens */
+    padding-top: 10px; /* Less padding on top */
+  }
+}
+
+/* MISSION */
+
+#splite-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Ensures that the two children are spaced out */
+  align-items: flex-start;
+  padding: 20px; /* 适当的内边距 */
+  padding-top: 5%;
+}
+
+.content {
+  width: 60% !important;
+  box-sizing:border-box;
+  background-color: #F5F0E6;
+  padding: 20px; /* 减少填充以适应小屏幕 */
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  text-align: center; /* 文本居中 */
+  border-radius: 18px;
+}
+
+.content h1 {
+  color: #00649b; /* Darker shade for headers */
+  font-family: 'Agbalumo';
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.5;
+  text-align: center;
+  margin:0;
+}
+
+.content p {
+  font-family: 'Agbalumo';
+  font-size: 1rem;
+  line-height: 1.8;
+  color:black;
+  position:center;
+  text-align: left;
+  padding-top: 2%;
+
+}
+
+
+.bubbles-side {
+  width: 40% !important;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing:border-box;
+  padding-top: 0%;
+}
+
+.chat-bubble {
+  background-color:#00649b;
+  border-radius: 18px;
+  padding: 10px 20px;
+  margin: 10px 0;
+}
+
+.chat-bubble p {
+  text-decoration:underline;
+  color:white;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.chat-bubble span {
+  color:white;
+  display: block; /* 使文本显示在新行 */
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #split-section {
+    flex-direction: column;  /* Stack elements vertically */
+    align-items: center;     /* Center-align the items */
+  }
+
+  .text-content, .bubbles-side {
+    width: 100%;             /* Full width for small screens */
+    padding: 10px;           /* Reduced padding */
+    text-align: center;      /* Center text for better readability */
+  }
+
+  .chat-bubble {
+    width: 80%;              /* Make bubbles slightly narrower */
+    margin: 10px auto;       /* Center-align bubbles */
+  }
+
+  .chat-bubble p{
+    font-size: 1.2rem;
+  }
+
+  .chat-bubble span{
+    font-size: 1rem;
+    
+  }
+  .content {
+    padding: 20px 10px; /* Reduced padding on smaller screens */
+  }
+  .content h1 {
+    font-size: 1.5rem; /* 在更小的屏幕上进一步减小字号 */
+  }
+  .content p {
+    padding: 4%; /* 移除段落的填充 */
+  }
+}
+
+/* features section */
+#features{
+  padding:7% 15%;
+  z-index: 5;
+  background-color:white ;
+  position:relative;
+}
+.feature-box{
+  text-align:center;
+  padding: 5%;
+}
+.icon{
+  color:blue;
+  margin-bottom:1rem;
+}
+.icon:hover{
+  color:#8fdbf2
+}
+
+
+
+/* Pricing section */
+#pricing{
+  padding:50px 20px;
+  text-align:center;
+} 
+.pricing-header{
+  color:#000000;
+  font-size:3rem;
+  text-align: center;
+}
+
+
+.pricing-column{
+  padding:2% 1%;
+  margin-bottom: 20px; 
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 添加阴影，增强视觉效果 */
+  margin-bottom: 20px; /* 底部边距，确保卡片之间的间隔 */
+  border-radius: 10px; /* 边框圆角 */
+  overflow: hidden; /* 防止内容溢出 */
+}
+
+.card-header {
+  background-color: #f8f9fa; /* 浅色背景 */
+  padding: 15px;
+  font-size: 1.5rem; /* 调整标题字体大小 */
+}
+
+.card-body {
+  padding: 15px;
+  font-size: 1rem; /* 调整内容字体大小 */
+  color:black;
+
+}
+
+.highlight-black {
+  color:black !important;
+}
+
+.highlight-red {
+  color:red !important;
+}
+
+.pricing-column .btn.btn-lg.btn-block {
+  margin-top: 5px; /* 增加按钮与内容的间距 */
+  padding: 8px 60px; /* 增加按钮的填充 */
+  font-size: 0.8rem;  /* Reduce the font size */
+  border-radius: 5px;
+  width:50%;
+  align-items: center;
+}
+
+.circled-text {
+  border: 3px solid red; /* Sets the color and thickness of the border */
+  border-radius: 50%; /* Creates the round shape */
+  padding: 5px 10px; /* Adds space between the text and the border */
+  white-space: nowrap; /* Ensures the text stays on one line */
+  display: inline-block; /* Allows the border to fit tightly around the text */
+  font-weight: bold;
+  transition: transform 1.0s, font-weight 0.3s; /* Smooth transition for effects */
+  transform: scale(1); /* Default scale */
+}
+
+.circled-text.vivid {
+  transform: scale(1.2); /* Slightly larger scale when vivid */
+  font-weight: bold; /* Bold when vivid */
+}
+
+
+
+#pricing .pricing-header + p {/* target only the first <p> after.pricing-header 为你梦想起航*/
+  color: #8f8f8f; /* This is the color you had set */
+  font-size: 1.75rem; /* Adjust the font size to your liking */
+  margin-top: 1.5%;
+}
+#pricing .card-body p:not(:first-child) { /* 剩下的p */
+  color: #8f8f8f; /* This sets the text color for all <p> except the first */
+  font-size: 1rem; /* This sets the font size for all <p> except the first */
+}
+
+@media (max-width: 768px) {
+  #pricing {
+    padding: 20px; /* 更小屏幕上的填充 */
+  }
+  
+  .pricing-column {
+    width: 100%; /* 小屏幕上卡片宽度为100% */
+  }
+  .pricing-header{
+    font-size: 2rem !important;
+  }
+
+  .pricing-header + p {
+    font-size: 1.0rem !important; /* 手机版描述文本大小 */
+  }
+
+  .card {
+    margin: 8px 20px; /* 上下保持8px, 左右减少到20px */
+    padding: 1px 0px; /* 内部填充上下1px，左右0px */
+  }
+
+  .card-header,
+  .card-body {
+    padding: 10px;
+  }
+
+  .btn {
+    padding: 8px 5px; /* 调整按钮的大小，更适合小屏幕操作 */
+    font-size: 0.9rem;
+  }
+}
+
+/* Call to actio */
+#cta{
+  background-color:#00649b;
+  color:#ffffff;
+  padding:20px 15% 20px 15%;/* 上下padding减至20px，左右保持15% */
+  text-align:center;
+}
+.cta-heading{
+  font-family:'Montserrat';
+  font-weight:bold;
+  font-size:3rem;
+  line-height:1.5;
+  margin-bottom:0;
+}
+.btn {
+  margin: 20px auto; /* 上下20px空间，自动水平居中 */
+  padding: 12px 24px; /* 内部填充 */
+  border-radius: 30px; /* 圆角大小调整 */
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: block; /* 确保按钮独占一行并居中 */
+  }
+
+@media(max-width:768px){
+  #cta {
+    padding: 10px 10%; /* 在小屏幕上减少左右padding */
+  }
+
+  .cta-heading {
+    font-size: 1.6rem !important; /* 小屏幕上标题字体大小减小 */
+    margin-bottom: 5px; /* 减少标题与按钮之间的距离 */
+  }
+
+  .btn {
+    font-size: 1rem!important; /* 小屏幕上按钮字体更小 */
+    padding: 12px 24px; /* 适当调整按钮内部填充 */
+    width: auto; /* 自动宽度以适应内容 */
+}
+}
+
+
+/* Footer Section */
+#footer{
+  display: flex !important;             /* Enables flexbox layout */
+  flex-direction: column;
+  justify-content: center !important;   /* Centers content horizontally */
+  align-items: center !important;       /* Centers content vertically */
+  text-align: center !important;        /* Ensures text alignment is centered */
+  padding: 20px 0 !important;           /* Adds padding above and below for spacing */
+  color: white !important;              /* Adjusts text color if needed */
+  width: 100% !important; 
+  font-size:1rem;  
+}
+
+.social-icon-container {
+  display: flex;
+  justify-content: center; /* Center the icons horizontally */
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.social-icon{
+  margin: 0px 15px; 
+  color:#00649b;  
+}
+
+
+@media (max-width: 768px) {
+  h1,h5,#first-container .col-lg-6 h1, .navbar-brand, .cta-heading, .pricing-header {
+    font-size: 3.75rem; /* 手机屏幕上的字体大小 */
+  }
+
+  .nav-link {
+    font-size: 1rem; /* 调整导航链接的字体大小 */
+  }
+
+  h4{
+    font-size: 1.75rem;
+  }
+
+  #first-container .col-lg-6 h1, #first-container .col-lg-6 h5 {
+    padding: 0 15px; /* 在小屏幕上移除左侧填充 */
+    text-align: center; /* 居中标题 */
+  }
+  
+  .download-button, .btn {
+    font-size: 1.2rem; /* 调整按钮字体大小 */
+  }
+}

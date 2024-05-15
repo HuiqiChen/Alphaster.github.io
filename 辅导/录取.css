@@ -1,0 +1,364 @@
+/* COGS3 studyBuddy specific styles go here. */
+
+#title
+{background-color:white;}
+
+.container-fluid{
+  padding:1% 1%;
+  margin:0 auto;
+  max-width:1200px;
+  }
+
+h1 {
+  font-family: 'Agbalumo';
+  font-weight: bold;
+  font-size: 5rem;
+  line-height: 1.5;
+  color:#fff;
+}
+
+h4 {
+  font-family: 'Agbalumo';
+  font-size: 3.5rem;
+  line-height: 1;
+  color:white;
+}
+
+h2{
+  color:black;
+  font-family: 'Montserrat';
+  font-size:1.5;
+  font-weight: bold;
+}
+h3{
+  font-family: 'Montserrat';
+  font-weight: bold;
+  }
+
+p{
+  color:black;
+  font-size:2rem;
+
+}
+
+/* navbar */
+.navbar{
+  padding:0 ;
+  margin-bottom: 0;
+}
+.navbar-brand {
+  font-family: 'Agbalumo';
+  font-size:4.0rem !important;
+
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.navbar-item{
+  padding:0 18px; 
+}
+.nav-link{
+  font-family: 'Montserrat',sans-serif;
+  font-size: 2.0rem;
+  font-weight: bold;
+}
+
+
+/* first-container section */
+/* titl image */
+#first-container{
+  background-color: rgba(20, 20, 20, 0.5);
+  background-image:url(photo/17.png);
+  margin-top: 0%;
+  width: 100%;
+  height: auto;
+  background-position: center center;
+  padding: 5px 0px 8px 0px;
+  background-size: cover;
+  background-blend-mode: color;
+  background-repeat: no-repeat;
+}
+
+#first-container .col-lg-6 h1{
+  padding-left: 100px; /* Adjust this value as needed */
+  margin-top: 28px;
+  font-size: 4rem !important;
+}
+#first-container .col-lg-6 h5 {
+  font-family: 'Agbalumo';
+  font-weight: bold;
+  font-size: 4rem !important;
+  line-height: 1;
+  color:#fff;
+  padding-left: 200px;
+}
+
+#first-container .col-lg-6 h4 {
+  padding-left: 100px !important; /* Adjust this value as needed */
+  margin-top: 40px;
+  margin-bottom: 0;
+  font-size: 2rem !important;
+  padding-left: 100px;
+  padding-top:10px;
+}
+
+#first-container .download-button{
+  margin: 8% 35% 10% 20%;
+  border-radius: 55px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: block; /* Block display to take full width */
+  width: auto; /* Auto width */
+  }
+
+  
+.title-image{
+  width: 100%;
+  height: 50%;
+  position: relative;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+@media (max-width: 768px) {
+  /* Adjust layout for smaller screens */
+  #first-container {
+    flex-direction: column; /* Stack elements vertically */
+    padding:10px;
+    background-size:cover;
+  }
+
+  #first-container .col-lg-6{
+    width: 100%; /* Full width for each section */
+  }
+  #first-container .col-lg-6 h1{
+    font-size: 3rem !important;
+  }
+  #first-container .col-lg-6 h5 {
+    font-size: 3rem !important;
+    line-height: 1.5;
+    padding-left: 8%;
+  }
+  
+  #first-container .col-lg-6 h4 {
+    font-size: 1.5rem !important;
+    padding-left: 10px !important;
+    align-items: center !important;
+    padding-bottom: 0;
+    margin-left: 10%;
+  }
+  
+  #first-container .download-button {
+    padding: 10px 20px; /* Adequate padding within the button */
+    margin: 3%;
+    margin-left: 27%;
+    font-size: 1.3rem; /* Keep button text readable */
+    width: auto; /* Adjust width to fit content */
+
+  }
+}
+
+
+#word {
+  background-color: #f4f4f4; /* 浅灰色背景 */
+  text-align: center; /* 文字居中 */
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin-top: 15px; /* 上下外边距20像素，左右无外边距 */
+  margin-bottom: 0px;
+  font-size: 1.5rem; /* 文字大小 */
+  color: #333; /* 文字颜色 */
+  font-family: Arial, sans-serif; /* 使用Arial字体 */
+}
+
+@media (max-width: 768px) {
+  #word {
+    font-size: 1px;
+    color:black;
+  }
+}
+
+
+/* gallery */
+/* Gallery CSS */
+#gallery1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 0%;
+
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery a {
+  display: inline-block;
+  margin: 10px;
+  border: 5px solid rgba(237, 31, 31, 0.753);
+}
+.gallery img {
+  width: 100px; /* Thumbnail size */
+  height: 130px;
+}
+
+/* Full-size image styling */
+.full-size {
+  display: none; /* Hide by default */
+  position: fixed; /* Overlay on the screen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:black; /* Semi-transparent background */
+  z-index: 9999;
+  text-align: center; /* Center the image */
+  padding-top: 50px; /* Adjust based on your layout */
+}
+.full-size img {
+  max-width: 90%; /* Limit image size */
+  max-height: 80%;
+  margin: auto; /* Centering the image vertically */
+}
+
+.full-size .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 2em;
+  color: white;
+  text-decoration: none;
+  cursor:pointer;
+}
+
+/* Display the full-size image when its ID is targeted */
+:target {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  gallery a {
+    flex: 1 1 50% !important;
+    margin: 30px;
+  }
+
+  .gallery img {
+      width: 100px; /* Larger thumbnails for desktop */
+      margin:6px;
+  }
+
+  .full-size {
+      padding-top: 100px; /* Larger padding for desktop */
+  }
+
+  .full-size img {
+      max-width: 90%; /* Larger images for desktop */
+      margin:0px;
+  }
+
+  .full-size .close {
+      font-size: 2em; /* Larger close button for desktop */
+  }
+}
+
+
+
+
+
+
+
+/* Call to actio */
+#cta{
+  background-color:#00649b;
+  color:#ffffff;
+  padding:20px 15% 20px 15%;/* 上下padding减至20px，左右保持15% */
+  text-align:center;
+}
+.cta-heading{
+  font-family:'Montserrat';
+  font-weight:bold;
+  font-size:3rem;
+  line-height:1.5;
+  margin-bottom:0;
+}
+.btn {
+  margin: 20px auto; /* 上下20px空间，自动水平居中 */
+  padding: 12px 24px; /* 内部填充 */
+  border-radius: 30px; /* 圆角大小调整 */
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: block; /* 确保按钮独占一行并居中 */
+  }
+
+@media(max-width:768px){
+  #cta {
+    padding: 10px 10%; /* 在小屏幕上减少左右padding */
+  }
+
+  .cta-heading {
+    font-size: 1.6rem !important; /* 小屏幕上标题字体大小减小 */
+    margin-bottom: 5px; /* 减少标题与按钮之间的距离 */
+  }
+
+  .btn {
+    font-size: 1rem!important; /* 小屏幕上按钮字体更小 */
+    padding: 12px 24px; /* 适当调整按钮内部填充 */
+    width: auto; /* 自动宽度以适应内容 */
+}
+}
+
+
+/* Footer Section */
+#footer{
+  display: flex !important;             /* Enables flexbox layout */
+  flex-direction: column;
+  justify-content: center !important;   /* Centers content horizontally */
+  align-items: center !important;       /* Centers content vertically */
+  text-align: center !important;        /* Ensures text alignment is centered */
+  padding: 20px 0 !important;           /* Adds padding above and below for spacing */
+  color: white !important;              /* Adjusts text color if needed */
+  width: 100% !important; 
+  font-size:1rem;  
+}
+
+.social-icon-container {
+  display: flex;
+  justify-content: center; /* Center the icons horizontally */
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.social-icon{
+  margin: 0px 15px; 
+  color:#00649b;  
+}
+
+
+@media (max-width: 768px) {
+  h1,h5,#first-container .col-lg-6 h1, .navbar-brand, .cta-heading, .pricing-header {
+    font-size: 3.75rem; /* 手机屏幕上的字体大小 */
+  }
+
+  .nav-link {
+    font-size: 1rem; /* 调整导航链接的字体大小 */
+  }
+
+  h4{
+    font-size: 1.75rem;
+  }
+
+ p
+ {
+  font-size: 1.5rem;
+}
+  #first-container .col-lg-6 h1, #first-container .col-lg-6 h5 {
+    padding: 0 15px; /* 在小屏幕上移除左侧填充 */
+    text-align: center; /* 居中标题 */
+  }
+  
+  .download-button, .btn {
+    font-size: 1.2rem; /* 调整按钮字体大小 */
+  }
+}
